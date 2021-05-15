@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+    <p>Input 'a', 'b' and 'c' for ax^2 + bx + c = 0</p>
+    <label for="a">a = </label>
+    <input type="text" id="a">
+    <br>
+    <label for="b">b = </label>
+    <input type="text" id="b">
+    <br>
+    <label for="c">c = </label>
+    <input type="text" id="c">
+    <br>
+    <button onclick="Submit()">Calculate</button>
+    <div id="result"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../app/index.js" th:src="@{/app/index.js}" ></script>
+</body>
+
+</html>
